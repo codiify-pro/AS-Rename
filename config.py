@@ -10,7 +10,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8227057226:AAEGcySDGTsGawmXG1TCZS4WMLDd1JZWu4E") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","asrename")     
     DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://gudiyakum678_db_user:4pyIIsSd8F60Fzo9@cluster0.ad5syvd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
