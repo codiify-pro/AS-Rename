@@ -7,15 +7,15 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "28167693")
     API_HASH  = os.environ.get("API_HASH", "5924714f9a7a69c4fde389805baa7d23")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8227057226:AAEGcySDGTsGawmXG1TCZS4WMLDd1JZWu4E") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
+    DATABASE_NAME = os.environ.get("DATABASE_NAME","Cluster0")     
     DATABASE_URL  = os.environ.get("DATABASE_URL","mongodb+srv://gudiyakum678_db_user:4pyIIsSd8F60Fzo9@cluster0.ad5syvd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://img.odivex.com/img/img_1757989282_ea445dff59.jpg")
+    START_PIC   = os.environ.get("START_PIC", "")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2021145517').split()]
 
     # channels logs
