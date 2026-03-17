@@ -5,9 +5,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "28167693")
-    API_HASH  = os.environ.get("API_HASH", "5924714f9a7a69c4fde389805baa7d23")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8198606130:AAFL3QNPIYC6OjpdNznhR6qZ_-8OGGVjygI") 
+    API_ID    = os.environ.get("API_ID", "38250529")
+    API_HASH  = os.environ.get("API_HASH", "87ba30a53f394110c5d056562f9d7f94")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8648695578:AAFHhmOkkQ74QnMJCnqc_w_LGezQq57i914") 
    
     # database config
     DATABASE_NAME = os.environ.get("DATABASE_NAME","asrename")     
@@ -19,7 +19,7 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2021145517').split()]
 
     # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "-1002521835919") 
+    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002521835919"))
 
     # wes response configuration     
